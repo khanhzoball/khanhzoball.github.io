@@ -10,13 +10,16 @@ body {
 }
 
 h1 {
-    text-transform: uppercase
-    ;
+    text-transform: uppercase;
 }
 
 img {
     width: 10%;
     height: auto;
+}
+
+.center {
+    text-align: center;
 }
 
 .UCLAblue {
