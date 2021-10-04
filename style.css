@@ -1,0 +1,35 @@
+body {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center_name {
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase
+    ;
+}
+
+img {
+    width: 10%;
+    height: auto;
+}
+
+.UCLAblue {
+    color:#2774AE
+}
+
+.UCLAgold {
+    color:#FFD100
+}
+
+.big_bold_upper_wide {
+    letter-spacing: 10px;
+    transform: uppercase;
+    font-size: 100px;
+    font-weight: bold;
+}
