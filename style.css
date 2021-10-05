@@ -1,25 +1,99 @@
-body {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'hk_groteskbold';
+    src: url('HK-frotesk/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('HK-frotesk/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-.center_name {
-    text-align: center;
-    font-size: 65px;
-    font-family: 'Open Sans', sans-serif;
+
+
+body {
+    color: black;
 }
 
 h1 {
-    text-transform: uppercase;
+    font-size: 100px;
+    font-family: 'hk_groteskbold', sans-serif;
+    font-weight: bold;
 }
 
-img {
-    width: 10%;
-    height: auto;
+
+button {
+    border: none;
+    outline: none;
+    font-family: 'hk_groteskbold', sans-serif;
+    font-size:50px;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    
 }
 
-.center {
-    text-align: center;
+button:hover {
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+
+.btn {
+    background-color: white;
+    cursor: pointer;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+
+.btn .btn-text {
+    max-width: 0;
+    display: inline-block;
+    -webkit-transition: max-width 1s ease-out;
+    transition: max-width 1s ease-out;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+  }
+  
+.btn:hover .btn-text {
+    max-width: 300px;
+    color: black;
+}
+
+a:link {color:black; text-decoration: none;}
+a:visited { color:black; text-decoration: none;}
+a:focus { color:black; text-decoration: none;}
+a:hover { color:black; text-decoration: none;}
+a:active { color:black; text-decoration: none;}
+
+#bio {
+    font-family: 'hk_groteskbold', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#description {
+    font-family: 'hk_groteskbold', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#note {
+    font-family: 'Open Sans', sans-serif;
+    font-size:10px
+}
+
+.rounded_corners {
+    border-radius: 10px;
 }
 
 .UCLAblue {
@@ -30,9 +104,103 @@ img {
     color:#FFD100
 }
 
-.big_bold_upper_wide {
-    letter-spacing: 10px;
-    transform: uppercase;
-    font-size: 100px;
-    font-weight: bold;
+
+.profile_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows:    repeat(4, 100px);
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    justify-items: center;
+}
+
+.grid-item-picture-1 {
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.grid-item-link-1 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.grid-item-link-2 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.grid-item-link-3 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.grid-item-link-4 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+
+.grid-container-2 {
+    display: grid;
+    grid-template-rows:  45 repeat(3, 45px);
+    grid-template-columns: 300;
+    justify-content: center;
+    grid-gap: 2px;
+}
+
+.grid-text-1 {
+    grid-row-start: 1;
+}
+
+.grid-text-2 {
+    grid-row-start: 2;
+}
+
+.grid-text-3 {
+    grid-row-start: 3;
+}
+
+.grid-text-4 {
+    grid-row-start: 4;
+}
+  
+
+
+
+.line-1{
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;  
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2.7s steps(50) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }

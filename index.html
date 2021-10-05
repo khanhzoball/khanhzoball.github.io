@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>KHANHZO BALL</title>
-        <link rel="stylesheet" href="style.css"
-        >
+        <title>
+            KHANHZO BALL
+        </title>
+
+        <!---Open Sans-->
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-        <link rel="GOODTIME" href="GOODTIME.ttf">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <!---font awesome-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
 
     <body>
-        <h1 class="center_name">
-            Khanh Nguyen
-        </h1>
+        <!--<h1 class="center">
+            khanh nguyen
+        </h1>-->
+        
+        <div id="bio" class="line-1 anim-typewriter" style="text-align: center">
+            I'm Khanh, a third year student at 
+            <snap class="UCLAblue">U</snap><snap class="UCLAgold">C</snap><snap class="UCLAblue">LA</snap>.
+            
+        </div>
+        <br/>
+        <div class="grid-container">
+            <div class="grid-item-picture-1">
+                <img class="profile_img rounded_corners" src="khanh_san_fran.jpg" alt="KHANHZO BALL IN SAN FRAN"/>
+            </div>
 
-        <p class="center">Hi. I'm Khanh Nguyen, but people call me <strong>KHANHZO BALL</strong> (yes, all caps please).</p>
-        <p class="center">About me: I'm currently a third year Data Theory major at 
-            <span class="UCLAblue">U</span><span class="UCLAgold">C</span><span class="UCLAblue">LA</span>. 
-            I recently found out that I like software
-            engineering and development, and that's what I'm focused on right now. During my free time, I like to play basketball,
-            video games (hiatus), piano (hiatus), and watch k-drama/anime.
-        </p>
-        <img src="khanh_san_fran.jpg" alt="KHANHZO BALL IN SAN FRAN"/>
-        <br />
+            <div class="grid-item-link-1">
+                <button class="btn" style="text-align:left">
+                    <a href="resume/khanh.pdf" target="_blank">
+                        <span class="btn-icon"><i class="fa fa-file-o"></i>
+                        <span class="btn-text"> &nbsp;&nbsp;resume</span>
+                    </a>
+                </button>
+            </div>
 
-        Currently:
-        <ul>
-            <li>learning: 한국어 (Korean), React</li>
-            <li>watching: 호텔 델루나 (Hotel Del Luna)
-            <li>playing: </li>
-            <li>thinking about: my future</li>
-            </li>
-        </ul>
-        I hate choosing favorites. My favorite:
-        <ul>
-            <li>basketball team: OKC Thunder</li>
-            <li>video games: Persona 5: Royal, Nier: Automata, Detroit Become Human, Fusionfall, NBA 2k</li>
-            <li>kdramas: 스타트업 (Start-Up), 시그널 (Signal)</li>
-            <li>animes: Fate/stay night, Re:Zero, Bleach, Dr.Stone</li>
-            <li>food (currently craving): dim sum</li>
-            <li>artist (currently listening to): 이성화 (GRAY)</li>
-        </ul>
-        <span class="big_bold_upper_wide">More coming soon</span>.
+            <div class="grid-item-link-2">
+                <button class="btn" style="text-align:left">
+                    <a href="https://github.com/khanhzoball" target="_blank">
+                        <span class="btn-icon"><i class="fa fa-github"></i></span>
+                        <span class="btn-text">&nbsp;&nbsp;github</span>
+                    </a>
+                </button>
+            </div>
+
+            <div class="grid-item-link-3">
+                <button class="btn" style="text-align:left">
+                    <a href="mailto: khanhhnguyen@g.ucla.edu" target="_blank">
+                        <span class="btn-icon"><i class="fa fa-envelope"></i></span>
+                        <span class="btn-text">&nbsp;&nbsp;email</span>
+                    </a>
+                </button>
+            </div>
+
+            <div class="grid-item-link-4">
+                <button class="btn" style="text-align:left">
+                    <a href="https://open.spotify.com/user/cr7qycpknnk2gckhvgid4tzhe?si=4c8f96b6cd5d4b71" target="_blank">
+                        <span class="btn-icon"><i class="fa fa-spotify"></i></span>
+                        <span class="btn-text">&nbsp;&nbsp;Spotify</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid-container-2">
+            <div class="grid-text-1">
+                <span id="bio">&nbsp;currently</span>
+            </div>
+
+            <div class="grid-text-2">
+                &nbsp;&nbsp;&nbsp;&nbsp;<span id="description">learning: 한국어 (Korean)</span>
+            </div>
+
+            <div class="grid-text-3">
+                &nbsp;&nbsp;&nbsp;&nbsp;<span id="description">watching: nothing</span>
+            </div>
+
+            <div class="grid-text-4">
+                &nbsp;&nbsp;&nbsp;&nbsp;<span id="description">playing: nothing</span>
+            </div>
+        </div>
     </body>
+
+    <br/>
+    
+    <div id="bio" style="text-align: center">
+        more coming soon.
+    </div>
+
+    <div id="note" style="text-align: center">
+        last updated: Oct 1, 2021
+    </div>
 </html>
