@@ -20,24 +20,6 @@ body, html {
     background-size: cover;
 }
 
-#bio {
-    font-family: 'hk_groteskbold', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-#note {
-    font-family: 'Open Sans', sans-serif;
-    font-size:10px
-}
-
-#description {
-    font-family: 'hk_groteskbold', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 100;
-}
-
-
 a {
     color: black;
     background-color: black;
@@ -62,12 +44,46 @@ a:active { color:black; text-decoration: none;}
     border-radius: 10px;
 }
 
-.profile_img {
-    width:14rem;
-    object-fit: cover;
-}
-
 .my-row {
     justify-content: center;
 }
 
+.bio {
+    font-family: 'hk_groteskbold', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+.profile_img {
+    width:14rem;
+}
+
+.note {
+    font-family: 'Open Sans', sans-serif;
+    font-size:10px;
+}
+
+.description {
+    font-family: 'hk_groteskbold', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 600px) {
+    .bio {
+        font-family: 'hk_groteskbold', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .profile_img {
+        width:11rem;
+    }
+
+    .description {
+        font-family: 'hk_groteskbold', sans-serif;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}

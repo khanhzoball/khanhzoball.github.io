@@ -27,7 +27,16 @@
 
         <!---bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+
+        <style>
+            @media screen and (max-width: 600px) {
+                .bio {
+                    font-family: 'hk_groteskbold', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+            }
+        </style>
         
     </head>
     
@@ -38,7 +47,7 @@
         </h1>-->
         <br/>
         <div class="container">
-            <div id="bio" style="text-align:center; line-height:.8">
+            <div class="bio" style="text-align:center; line-height:.8">
                 i'm khanh, a third year student at 
                 <snap class="UCLAblue">u</snap><snap class="UCLAgold">c</snap><snap class="UCLAblue">la</snap>.
             </div>
@@ -46,19 +55,19 @@
             </br>
 
             <div class="row my-row">
-                <div class="col" >
-                    <img class="profile_img rounded_corners mx-auto d-block" src="khanh_san_fran.jpg" alt="KHANHZO BALL IN SAN FRAN"/>
+                <div class="col" style="text-align: center;">
+                    <img class="profile_img rounded_corners" src="khanh_san_fran.jpg" alt="KHANHZO BALL IN SAN FRAN"/>
                 </div>
             </div>
             
             <div class="row my-row">
-                <div id="bio" style="text-align: center">
+                <div class="bio" style="text-align: center">
                     currently
                 </div>
             </div>
 
             <div class="row my-row" style="text-align: left">
-                <div class="col-12" id="description">
+                <div class="col-12 description">
                     <div style="text-align: center;">
                         learning: 한국어 (Korean)
                     </div>
@@ -66,7 +75,7 @@
             </div>
 
             <div class="row my-row" >
-                <div class="col-12" id="description">
+                <div class="col-12 description">
                     <div style="text-align: center;">
                         watching: nothing
                     </div>
@@ -74,7 +83,7 @@
             </div>
 
             <div class="row my-row">
-                <div class="col-12" id="description">
+                <div class="col-12 description">
                     <div style="text-align: center;">
                         playing: nothing
                     </div>
@@ -82,21 +91,21 @@
             </div>
 
             <div class="row my-row">
-                <div id="bio" style="text-align: center">
+                <div class="bio" style="text-align: center">
                     more coming soon.
                 </div>
             </div>
             
             <div class="row my-row">
-                <div id="note" style="text-align: center">
-                    last updated: Oct 4, 2021
+                <div class="note" style="text-align: center">
+                    last updated: oct 14, 2021
                 </div>
             </div>
         </div>  
+        
         <br/>
-        <footer>
 
-            <!-- Copyright -->
+        <footer>
             <div class="row my-row" style="font-size: 1.2rem;">
                 <div class="col-12" style="text-align: center;">
                     <a href="resume/khanh.pdf" style="color:black; text-decoration: none;" target="_blank">
