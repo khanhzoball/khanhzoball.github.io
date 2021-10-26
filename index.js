@@ -5,4 +5,4 @@ function minimize_bar() {
     } else {
       x.className = "topnav";
     }
-  }
+}
