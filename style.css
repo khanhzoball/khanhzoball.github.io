@@ -1,17 +1,7 @@
-@font-face {
-    font-family: 'hk_groteskbold';
-    src: url('assets/HK-frotesk/hkgrotesk-bold-webfont.woff2') format('woff2'),
-         url('assets/HK-frotesk/hkgrotesk-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body, html {
     color: black;
     width: 100%;
 	height: 100%;
-    font-family: 'hk_groteskbold', sans-serif;
-    font-weight: bold;
     overflow: auto;
     background: url(assets/background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -32,121 +22,51 @@ a:focus { color:black; text-decoration: none;}
 a:hover { color:black; text-decoration: none;}
 a:active { color:black; text-decoration: none;}
 
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1em;
+    margin-top: 20px;
+    
+}
+
+.profile_img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.icon_container {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    font-size:  1.4rem;
+    margin: 1rem;
+}
+
 .UCLAblue {
     color:#2774AE
 }
 
 .UCLAgold {
     color:#FFD100
-}
-
-.rounded_corners {
-    border-radius: 10px;
-}
-
-.my-row {
-    justify-content: center;
-}
-
-.bio {
-    font-family: 'hk_groteskbold', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-
-.profile_img {
-    width:14rem;
-}
-
-.note {
-    font-family: 'Open Sans', sans-serif;
-    font-size:10px;
-}
-
-.description {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 100;
-}
-
-.topnav {
-    background-color: transparent;
-    overflow: hidden;
-    text-align: right;
-    padding-top: 2rem;
-}
-
-.topnav a {
-    color: #666666;
-    text-align: center;
-    padding: 14px 5rem;
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-family: 'hk_groteskbold', sans-serif;
-    font-weight: 500;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.topnav a:link { color:black; text-decoration: none;}
-.topnav a:visited { color:black; text-decoration: none;}
-.topnav a:focus { color:black; text-decoration: none;}
-.topnav a:hover { color:black; text-decoration: none;}
-.topnav a:active { color:black; text-decoration: none;}
-
-
-@media screen and (max-width: 600px) {
-    .bio {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-
-    .profile_img {
-        width:11rem;
-    }
-
-    .description {
-        font-size: 1rem;
-        font-weight: 100;
-    }
-
-    .topnav a {
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .bio {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a {
-        display: none;
-        padding: 7px;
-        padding-bottom: 30px;
-    }
-    .topnav a.icon {
-        text-align: middle;
-        display: block;
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a {
-        display: block;
-        text-align: center;
-    }
 }
